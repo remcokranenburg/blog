@@ -5,8 +5,6 @@ tagline: How to reach me!
 ref: contact
 order: 1
 ---
-Email: user is remco, domain is burgsoft.nl. Concatenate user and domain with an @ in between.
-
-Github: <https://github.com/remcokranenburg>
+You can reach me via [email](mailto:remco@burgsoft.nl).
 
 [Go to the Home Page]({{ '/' | absolute_url }})
