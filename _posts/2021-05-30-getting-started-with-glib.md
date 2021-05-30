@@ -130,7 +130,7 @@ it is all integer logic underneath.
 
 GLib has its own `gboolean` type with `TRUE` and `FALSE` values, so we will use that here.
 
-## Other basic types
+## Other Basic Types
 
 GLib has a bunch of other types, such as types with explicit sizes (`gint32`, `gint64`), easier
 alternatives to some types (`guint` instead of `unsigned integer`, `gconstpointer` instead of
