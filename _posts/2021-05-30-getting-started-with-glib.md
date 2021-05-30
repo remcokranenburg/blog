@@ -83,7 +83,11 @@ exactly by running `pkg-config --cflags --libs glib-2.0`. On my system, this giv
 output:
 
 ```
--I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/sysprof-4 -pthread -lglib-2.0
+-I/usr/include/glib-2.0
+-I/usr/lib64/glib-2.0/include
+-I/usr/include/sysprof-4
+-pthread
+-lglib-2.0
 ```
 
 You see a few include directories that tell the compiler where to find GLib's header files, as well
