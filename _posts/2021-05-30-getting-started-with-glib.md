@@ -256,4 +256,7 @@ With such a simple example, the conversion to a GLib-based program is maybe not 
 you will quickly see the benefit when you start working with more complicated data types and their
 memory management.
 
-Let's see what the next puzzle brings.
+You can find the code for my solution
+[here](https://github.com/remcokranenburg/advent-of-glib-2019/tree/main/day01-tyranny). You might
+see an interesting file called `meson.build` there, which is an increasingly popular way of
+building your programs. But that is a topic for another post! Let's see what the next puzzle brings.
