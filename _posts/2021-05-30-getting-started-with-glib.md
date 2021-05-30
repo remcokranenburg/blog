@@ -112,9 +112,9 @@ false and any other value means true. Traditional C code would look like this:
 ```c
 int done = 0;
 
-while(is_cool) {
+while(!done) {
     do_cool_things();
-    
+
     if(is_done()) {
         done = 1;
     }
@@ -171,7 +171,7 @@ itself whether an object and its memory was still reachable in the current scope
 ```java
 void printBookTitles() {
     List<Book> books = get_books();
-    
+
     for(Book book : books) {
         System.out.println(book.title);
     }
