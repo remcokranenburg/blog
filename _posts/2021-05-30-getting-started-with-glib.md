@@ -7,7 +7,7 @@ learning by explaining is even better than learning by doing, I'll show the basi
 this blog post. We'll start with a plain C program and gradually replace parts of it with GLib
 functionality.
 
-# What is GLib?
+## What is GLib?
 
 First things first, GLib is a C library designed with two goals:
 
@@ -19,7 +19,7 @@ Initially, we'll only be concerned with the first goal. GLib extends the standar
 many ways, such as safer string handling, abstract data types, and a fully-featured object-oriented
 type system. 
 
-# A Simple Program
+## A Simple Program
 
 As an example program, let's look at a solution for the
 [first puzzle](https://adventofcode.com/2019/day/1) of the wonderful *Advent of Code 2019* puzzles.
@@ -94,17 +94,17 @@ You see a few include directories that tell the compiler where to find GLib's he
 as `-pthread` which enables thread support, and `-lglib-2.0`, which links the GLib library to our
 program.
 
-# GLib Conversion
+## GLib Conversion
 
 Now that we have GLib, we can start thinking about improving the code.
 
-## Math
+### Math
 
 One thing that comes to mind immediately is that we need to include `math.h` and link C's math
 library only for the `fmax()` function. If we are using GLib anyway, we can use its `MAX()` macro
 instead.
 
-## Booleans
+### Booleans
 
 Another peculiarity of C is its boolean logic. It is essentially integer comparison: `0` means
 false and any other value means true. Traditional C code would look like this:
@@ -130,13 +130,13 @@ it is all integer logic underneath.
 
 GLib has its own `gboolean` type with `TRUE` and `FALSE` values, so we will use that here.
 
-## Other Basic Types
+### Other Basic Types
 
 GLib has a bunch of other types, such as types with explicit sizes (`gint32`, `gint64`), easier
 alternatives to some types (`guint` instead of `unsigned integer`, `gconstpointer` instead of
 `const void *`), and a few cosmetic types that just exist for completeness (`gint`, `gfloat`).
 
-## Safer Strings
+### Safer Strings
 
 Nul-terminated strings in C are notoriously difficult to use safely, because a string's length is
 not stored in the object. It is simply an array of bytes that ends in an all-zeroes byte (a nul).
@@ -161,7 +161,7 @@ This makes it much easier to do string operations like inserting and removing pa
 memory management mistakes. Note that you must still remember to free the memory you allocated with
 `g_string_new()`.
 
-## Automatic Memory Management
+### Automatic Memory Management
 
 Way back in the 1990s, Java was developed as an alternative to C that was not only easier to use,
 but also safer. One of these safety features is automatic memory management. Instead of manually
@@ -201,7 +201,7 @@ Note that the memory behind `message` is never explicitly freed. GLib will autom
 memory at the end of the function, because `message` is the only reference and it is removed at the
 end of the function.
 
-## The Result
+### The Result
 
 Combining all of the above, we get the following program:
 
