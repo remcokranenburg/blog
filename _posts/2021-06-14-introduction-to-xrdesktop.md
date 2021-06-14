@@ -8,7 +8,7 @@ I'm Remco Kranenburg, and I'm implementing a *virtual keyboard* for
 <abbr title="Google Summer of Code">GSoC</abbr> 2021. In this post I'll talk a
 bit about the project and show some initial results. But first, a screenshot!
 
-![Keyboard drawing](../assets/2021/06-14-keyboard-drawing.png)
+![Keyboard drawing](/assets/2021/06-14-keyboard-drawing.png)
 
 ## Predictive Text Input for Virtual Reality
 
@@ -69,4 +69,4 @@ I'll read up a bit more about GObject signals and properties, so we can connect
 the keyboard events to the active window. Let's end with another screenshot
 showing our amazing VR stdout printer!
 
-![Keyboard with callback](../assets/2021/06-14-keyboard-with-callbacks.png)
+![Keyboard with callback](/assets/2021/06-14-keyboard-with-callbacks.png)
