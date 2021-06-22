@@ -1,9 +1,8 @@
-title: Remco Kranenburg
-description: Google Summer of Code participant for xrdesktop
+title: Remco's Blog
+description: Google Summer of Code intern for xrdesktop
+author: Remco Kranenburg
 
 url: "https://remcokranenburg.com"
-
-google_analytics:
 
 date_format: "%Y-%m-%d"
 
@@ -11,6 +10,7 @@ theme: # leave it empty
 
 plugins:
   - jekyll-target-blank
+  - jekyll-feed
 
 target-blank:
     rel: nofollow
