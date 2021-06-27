@@ -2,14 +2,22 @@
 layout: post
 title: Keyboard Event Handling
 ---
-In the past ten days of working on the virtual keyboard for xrdesktop, I've been
+## Attachment
+
+First things first, I made sure that the keyboard is always in view by using
+some nice existing functionality of xrdesktop and grouping all keyboard buttons
+into one `G3kContainer` and attaching it to the user's head:
+
+<video src="/assets/2021/06-27-keyboard-attachment.webm" autoplay loop></video>
+
+## Event Handling
+
+In the past few days of working on the virtual keyboard for xrdesktop, I've been
 trying to make the keyboard behave like a keyboard. That is, it should notice
 when one of its keys is clicked by the user, and it should generate the proper
 key event when this happens. This is the result:
 
 <video src="/assets/2021/06-27-keyboard-events.webm" autoplay loop></video>
-
-## Event Handling
 
 In my previous blog post, you could already see the keys react to clicks, but
 this is not enough for a fully functioning keyboard system. For one, you don't
@@ -24,7 +32,8 @@ The keyboard should maintain the state of these keys (on or off) internally, so
 the `key-press-event` would send the key capitalized when Shift is active, or
 'Ctrl + X' when Ctrl is active, etc.
 
-So how is this done technically? We need to register a `key-press-event` *signal* for `G3kKeyboard`, which we can then *emit* at the right time. The user
+So how is this done technically? We need to register a `key-press-event`
+*signal* for `G3kKeyboard`, which we can then *emit* at the right time. The user
 of the keyboard will write an event *callback*, and will *connect* the signal
 to it.
 
@@ -33,7 +42,10 @@ been clicked. So, we need to *connect* the button's `grab-start-event` to a
 callback that emits the `key-press-event`.
 
 You might be familiar with event handling in other languages, but in GLib style
-this is a fairly verbose affair.
+this is a fairly verbose affair. Once I understand the GObject system a bit
+better, I will write that part 2 of 'Getting Started with GLib' with a short
+tutorial on how to create objects with it. Find the raw event handling code
+below:
 
 `g3k_keyboard.c`:
 ```c
@@ -95,14 +107,7 @@ _init_keyboard(XrdShell *shell)
 }
 ```
 
-## Attachment
+That's it for now. Up next, let's start on the Swype prediction mode! For this,
+we need to show the path that the controller traced over the keyboard's keys and
+we need to calculate the word that was most likely meant to be typed.
 
-Finally, I used some nice existing functionality of xrdesktop and grouped all
-keyboard buttons into one `G3kContainer` and attached it to the user's head.
-This way, the keyboard is always in view:
-
-<video src="/assets/2021/06-27-keyboard-attachment.webm" autoplay loop></video>
-
-Up next, let's start on the Swype prediction mode! For this, we need to show the
-path that the controller traced over the keyboard's keys and we need to
-calculate the word that was most likely meant to be typed.
