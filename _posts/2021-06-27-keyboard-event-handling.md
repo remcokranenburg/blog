@@ -19,12 +19,12 @@ key event when this happens. This is the result:
 
 <video src="/assets/2021/06-27-keyboard-events.webm" autoplay loop></video>
 
-In my previous blog post, you could already see the keys react to clicks, but
-this is not enough for a fully functioning keyboard system. For one, you don't
-want to handle the events for each button separately; you would have to connect
-more than 100 events for a standard keyboard! You just want to connect a single
-`key-press-event` to your active window, which would contain all the information
-of the pressed key.
+In my [previous blog post](/2021/06/14/introduction-to-xrdesktop.html), you
+could already see the keys react to clicks, but this is not enough for a fully
+functioning keyboard system. For one, you don't want to handle the events for
+each button separately; you would have to connect more than 100 events for a
+standard keyboard! You just want to connect a single `key-press-event` to your
+active window, which would contain all the information of the pressed key.
 
 The second reason for handling the click events inside the keyboard, is that we
 need to keep track of the modifier keys (Shift, Ctrl, Alt, things like that).
