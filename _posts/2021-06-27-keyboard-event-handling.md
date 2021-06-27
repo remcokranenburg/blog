@@ -7,7 +7,7 @@ trying to make the keyboard behave like a keyboard. That is, it should notice
 when one of its keys is clicked by the user, and it should generate the proper
 key event when this happens. This is the result:
 
-![Keyboard with events](/assets/2021/06-24-keyboard-events.webm)
+![Keyboard with events](/assets/2021/06-27-keyboard-events.webm)
 
 ## Event Handling
 
@@ -101,7 +101,7 @@ Finally, I used some nice existing functionality of xrdesktop and grouped all
 keyboard buttons into one `G3kContainer` and attached it to the user's head.
 This way, the keyboard is always in view:
 
-![Keyboard attached to head](/assets/2021/06-24-keyboard-attachment.webm)
+![Keyboard attached to head](/assets/2021/06-27-keyboard-attachment.webm)
 
 Up next, let's start on the Swype prediction mode! For this, we need to show the
 path that the controller traced over the keyboard's keys and we need to
