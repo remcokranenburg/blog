@@ -5,7 +5,7 @@ title: Keyboard Event Handling
 
 First things first, I made sure that the keyboard is always in view by using
 some nice existing functionality of xrdesktop and grouping all keyboard buttons
-into one `G3kContainer` and attaching it to the user's head:
+into one G3kContainer and attaching it to the user's head:
 
 <video src="/assets/2021/06-27-keyboard-attachment.webm" autoplay loop></video>
 
@@ -32,7 +32,7 @@ the `key-press-event` would send the key capitalized when Shift is active, or
 'Ctrl + X' when Ctrl is active, etc.
 
 So how is this done technically? We need to register a `key-press-event`
-*signal* for `G3kKeyboard`, which we can then *emit* at the right time. The user
+*signal* for G3kKeyboard, which we can then *emit* at the right time. The user
 of the keyboard will write an event *callback*, and will *connect* the signal
 to it.
 
