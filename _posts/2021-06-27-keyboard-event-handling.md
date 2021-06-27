@@ -2,7 +2,6 @@
 layout: post
 title: Keyboard Event Handling
 ---
-## Attachment
 
 First things first, I made sure that the keyboard is always in view by using
 some nice existing functionality of xrdesktop and grouping all keyboard buttons
