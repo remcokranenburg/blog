@@ -77,7 +77,7 @@ g3k_keyboard_click_cb (XrdWindow     *window,
 
 Example usage:
 
-```
+```c
 void
 keyboard_pressed_cb(G3kKeyboard *keyboard,
                     G3kKeyEvent *event,
