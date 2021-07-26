@@ -76,6 +76,8 @@ a mode and has a *label*, *x* and *y* coordinates and a *width*. An optional
 }
 ```
 
+Numeric mode:
+
 ![Keyboard uppercase mode](/assets/2021/07-26-keyboard-mode2-numbers.png)
 
 Special character mode is accessible from the numeric mode.
