@@ -78,15 +78,15 @@ a mode and has a *label*, *x* and *y* coordinates and a *width*. An optional
 
 ![Keyboard uppercase mode](/assets/2021/07-26-keyboard-mode2-numbers.png)
 
-In uppercase mode, the alphabetic keys switch to capitals.
+Special character mode is accessible from the numeric mode.
 
 ![Keyboard special mode](/assets/2021/07-26-keyboard-mode3-special.png)
 
-Special character mode is accessible from the numeric mode.
+And we have support for emojis!
 
 ![Keyboard emoji mode](/assets/2021/07-26-keyboard-mode4-emoji.png)
 
-And we have support for emojis! They are specified literally in the JSON file:
+The emojis are specified literally in the JSON file:
 
 ```json
 {
