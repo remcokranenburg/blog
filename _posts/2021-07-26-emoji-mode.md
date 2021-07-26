@@ -109,7 +109,7 @@ To get it all working, I had to add Pango as a dependency, because it supports
 font fallbacks. Most fonts do not support all possible characters, so when you
 want to draw text in many languages, you will need to use several backup fonts.
 
-I added a small pango example to gulkan, showing latin, hebrew and arabic text
+I added a small pango example to gulkan, showing Arabic, Chinese and Hindi text
 plus emojis:
 
 ![Gulkan pango example](/assets/2021/07-26-gulkan-pango.png)
