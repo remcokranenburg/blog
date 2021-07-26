@@ -10,8 +10,8 @@ special characters and emojis!
 
 The modes are specified in JSON format and loaded as a GResource. The following
 shows an abbreviated example of how each key is specified. Each key is part of
-a mode and has a lable, x and y coordinates and a width. An optional target
-makes a key switch to a different mode.
+a mode and has a *label*, *x* and *y* coordinates and a *width*. An optional
+*target* makes a key switch to a different mode.
 
 ```json
 {
