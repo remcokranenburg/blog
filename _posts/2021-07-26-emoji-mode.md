@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Emoji Mode
+title: Emoji Mode ✨
 ---
 
 We now have multiple keyboard modes in xrdesktop: lowercase, uppercase, numbers,
