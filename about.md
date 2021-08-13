@@ -7,6 +7,15 @@ ref: about
 order: 0
 ---
 
-Here will be more info about me!
+Hi, my name is Remco Kranenburg and I'm a developer. I've worked at
+[Crunchr](https://crunchrapps.com) since 2014 where I've held many positions,
+from front-end development to infrastructure to quality assurance.
+
+I've also worked on
+[xrdesktop](https://gitlab.freedesktop.org/xrdesktop/xrdesktop) as part of
+Google Summer of Code 2021, which is the direct cause of this blog. I'd wanted
+to work on free software for a while now and this was the perfect introduction.
+
+I plan to continue contributing to various projects and blog about it here!
 
 [Go to the Home Page]({{ '/' | absolute_url }})
