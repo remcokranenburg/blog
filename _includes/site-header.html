@@ -31,6 +31,10 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+
+          {% if site.plugins contains "jekyll-feed" %}
+            <a class="page-link" href="{{ '/feed.xml' | absolute_url }}">RSS Feed</a>
+          {% endif %}
         </div>
       </nav>
     {% endif %}
