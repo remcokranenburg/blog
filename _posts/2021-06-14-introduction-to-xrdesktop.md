@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introduction to xrdesktop
+tags: GSoC2021
 ---
 Hello again! It has been a week and we still haven't been formally introduced!
 I'm Remco Kranenburg, and I'm implementing a *virtual keyboard* for

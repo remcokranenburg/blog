@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Emoji Mode ✨
+tags: GSoC2021
 ---
 
 We now have multiple keyboard modes in xrdesktop: lowercase, uppercase, numbers,

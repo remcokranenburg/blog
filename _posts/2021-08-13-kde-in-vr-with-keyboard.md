@@ -1,6 +1,7 @@
 ---
 layout: post
 title: KDE in VR with Keyboard Support
+tags: GSoC2021
 ---
 
 The xrdesktop project comes with built-in support for the two most popular

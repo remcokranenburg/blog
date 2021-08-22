@@ -8,6 +8,11 @@ date_format: "%Y-%m-%d"
 
 theme: # leave it empty
 
+collections:
+  tags:
+    output: true
+    permalink: tag/:title/
+
 plugins:
   - jekyll-target-blank
   - jekyll-feed
@@ -15,4 +20,4 @@ plugins:
 target-blank:
     rel: nofollow
 
-header_page_refs: ['about', 'contact']
+header_page_refs: ['about', 'tags']

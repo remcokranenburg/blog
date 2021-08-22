@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Keyboard Layouts
+tags: GSoC2021
 ---
 
 We now support 56 languages in xrdesktop!

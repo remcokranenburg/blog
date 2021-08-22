@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Getting Started with GLib
+tags: GSoC2021
 ---
 For GSoC 2021, I will be working on xrdesktop, which is written with the GLib library. Since
 learning by explaining is even better than learning by doing, I'll show the basics of using GLib in

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Keyboard Event Handling
+tags: GSoC2021
 ---
 
 First things first, I made sure that the keyboard is always in view by using
