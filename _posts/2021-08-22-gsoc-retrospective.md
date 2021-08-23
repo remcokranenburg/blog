@@ -8,7 +8,7 @@ In this post, we look back on the virtual keyboard project that I worked on for
 xrdesktop as a participant in Google Summer of Code 2021. It was a great
 experience and a good introduction to open source development. 
 
-![Keyboard emoji mode](/assets/2021/07-26-keyboard-mode4-emoji.png)
+![Keyboard emoji mode](/assets/2021/07-26-keyboard-mode4-emoji.png "Keyboard emoji mode")
 
 ## Current Status
 
@@ -18,7 +18,7 @@ people in 56 languages and it works with KDE. You can try it out by compiling
 the 'next' branches of the various libraries. See below for detailed
 instructions.
 
-![Arabic keyboard layout](/assets/2021/08-19-arabic-keyboard.png)
+![Arabic keyboard layout](/assets/2021/08-19-arabic-keyboard.png "Arabic keyboard layout")
 
 ## How to Run
 
@@ -33,7 +33,7 @@ a few cases:
 * libinputsynth: [remcokranenburg:keyvals-input](https://gitlab.freedesktop.org/remcokranenburg/libinputsynth/-/tree/keyvals-input)
 * kwin-effect-xrdesktop: [remcokranenburg:virtual-keyboard-support](https://gitlab.freedesktop.org/remcokranenburg/kwin-effect-xrdesktop/-/tree/virtual-keyboard-support)
 
-![KDE in VR with Keyboard](/assets/2021/08-13-kde-in-vr-with-keyboard.png)
+![KDE in VR with keyboard](/assets/2021/08-13-kde-in-vr-with-keyboard.png "KDE in VR with keyboard")
 
 ## Future Work
 
