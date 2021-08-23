@@ -85,6 +85,8 @@ Implementing multiple keyboard layouts:
 
 ## Blog Posts
 
+This project also prompted me to finally start a blog:
+
 * [Getting Started with GLib]({% post_url 2021-05-30-getting-started-with-glib %})
 * [Introduction to xrdesktop]({% post_url 2021-06-14-introduction-to-xrdesktop %})
 * [Keyboard Event Handling]({% post_url 2021-06-27-keyboard-event-handling %})
