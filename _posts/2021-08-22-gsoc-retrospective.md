@@ -49,7 +49,7 @@ also like to investigate whether the same technology can be used to add a swipe
 mode to GNOME Shell's on-screen keyboard.
 
 The third and most experimental mode was dropped for the time being. It entailed
-a Dasher-like interface adapted for a virtual reality environment. Since VR has
+a [Dasher-like](https://en.wikipedia.org/wiki/Dasher_(software)) interface adapted for a virtual reality environment. Since VR has
 such a different way of interacting, a keyboard input method might not make the
 most use of your abilities. The hypothesis is that a Dasher-like method might
 be faster when used with six-degrees-of-freedom controllers.
