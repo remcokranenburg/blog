@@ -2,7 +2,6 @@
 layout: post
 title: Google Summer of Code 2021, Retrospective
 tags: GSoC2021
-draft: true
 ---
 
 In this post, we look back on the virtual keyboard project that I worked on for
