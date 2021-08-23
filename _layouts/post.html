@@ -7,7 +7,7 @@ layout: default
   </div>
 
   <p class="post-meta">
-    Written by {{ page.author }} on {{ page.date | date: site.date_format }}.
+    Written by {{ site.author }} on {{ page.date | date: site.date_format }}.
     Tags:
     {% for tag in site.tags %}
       {% if page.tags contains tag.name or tag.name == page.tags %}
